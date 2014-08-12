@@ -18,16 +18,20 @@ public class SwipeScreenExample extends Activity {
 
     View.OnTouchListener gestureListener = new SwipeGestureListener()
     {
-        public void BottomToTop(){
+        public boolean onSwipeRight() {
+            return false;
         }
 
-        public void TopToBottom(){
+        public boolean onSwipeLeft() {
+            return false;
         }
 
-        public void RightToLeft(){
+        public boolean onSwipeTop() {
+            return false;
         }
 
-        public void LeftToRight(){
+        public boolean onSwipeBottom() {
+            return false;
         }
     };
 }
